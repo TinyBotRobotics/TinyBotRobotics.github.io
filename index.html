@@ -6,7 +6,7 @@
 	<meta name="viewport"
 				content="width=device-width, initial-scale=1.0">
 	<meta name="description"
-				content="Gulp pack for easy html/php markup development">
+				content="TinyBot">
 	<meta name="keywords"
 				content="">
 	<link rel="shortcut icon"
@@ -22,7 +22,7 @@
 				href="css/libs.min.css">
 	<link rel="stylesheet"
 				href="css/style.min.css">
-	<title>Easy-webdev-startpack v3.0</title>
+	<title>Tiny Bot</title>
 </head>
 
 
@@ -41,16 +41,24 @@ opacity: 0.9;
           EN
         </div>
         <div class="nav_item">
-          О проекте
+          <a href="#anchor-project">
+            О проекте
+          </a>
         </div>
         <div class="nav_item">
-          О роботах
+          <a href="#anchor-refs">
+            References
+          </a>
         </div>
         <div class="nav_item">
-          DataDriving
+          <a href="#anchor-interview">
+            DataDriving
+          </a>
         </div>
         <div class="nav_item">
-          Контакты
+          <a href="#anchor-contacts">
+            Контакты
+          </a>
         </div>
       </div>
 
@@ -64,8 +72,8 @@ opacity: 0.9;
           font-family: 'IBM Plex Mono';
           font-style: normal;
           font-weight: 300;
-         
-          
+
+
 
           color: #505d68;
           text-align: right;
@@ -80,20 +88,19 @@ opacity: 0.9;
         <div class="d-flex flex-grow-1 card"
            >
           <div class="d-flex card_number" style="
-                      
+
                         text-align: right;
-                        
-                        
-                     
-                        
+
+
+
+
                       ">1</div>
           <div class="d-flex flex-column">
             <div class="card_title" >
               Коллаборативный
             </div>
             <div class="card_text" >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna.
+              Промышленные манипуляторы работают в специально отведенной зоне. Коллаборивный режим снимает эти ограничения. Наш робот может работать рядом с человеком и податливо выполнять с ним задачи.
             </div>
           </div>
         </div>
@@ -102,40 +109,38 @@ opacity: 0.9;
 
         <div class="d-flex flex-grow-1 card"
       >          <div class="d-flex card_number" style="
-                      
+
                         text-align: right;
-                        
-                        
-                     
-                        
+
+
+
+
                       ">2</div>
           <div class="d-flex flex-column">
             <div class="card_title" >
-              Артикулированный
+              Интеллектуальный
             </div>
             <div class="card_text" >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna.
+              Манипулятор может сам генерировать набор движений для выполнения задачи и обучаться этому в процессе.
             </div>
           </div>
         </div>
         <!-- 3 -->
         <div class="d-flex flex-grow-1 card"
        >          <div class="d-flex card_number" style="
-                      
+
           text-align: right;
-          
-          
-       
-          
+
+
+
+
         ">3</div>
           <div class="d-flex flex-column">
             <div class="card_title" >
-              Адаптивный
+              Цифровой
             </div>
             <div class="card_text" >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna.
+              Модель окружения робота позволяет ему оптимизировать траекторию движения и избегать препятствий, а мы сможем быстро протестировать и интегрировать робота на под ваши задачи.
             </div>
           </div>
         </div>
@@ -154,7 +159,7 @@ opacity: 0.9;
   style="position:relative; margin-bottom: 150px; margin-top: 100px;">
   <div id="about_project" style="position:relative; z-index: -1; top: -50px"></div>
   <div class="d-flex flex-column align-center description">
-    <div class="d-flex" style="
+    <div class="d-flex" id="anchor-project" style="
           font-family: 'IBM Plex Mono';
           font-style: normal;
           font-weight: 700;
@@ -178,8 +183,10 @@ opacity: 0.9;
 
           color: #a1aeb7;
           margin-bottom: 15px;
+
+          text-align: justify!important; -webkit-hyphens: auto; hyphens: auto;
         ">
-      Тут будут описаны главные идеи
+      Обеспечить простоту работы и интеграции, возможность взаимодействовать с человеком, обучаемость и высокую степень интеллектуальности робота.
     </div>
     <div class="d-flex" style="
           font-style: normal;
@@ -187,12 +194,13 @@ opacity: 0.9;
           font-size: 16px;
           line-height: 24px;
           /* or 150% */
-          text-align: center;
+          /* text-align: center; */
 
           color: #a1aeb7;
+
+          text-align: justify!important; -webkit-hyphens: auto; hyphens: auto;
         ">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna.
+      Мы разрабатываем робота-манипулятора для безопасной совместной работы с человеком в разносторонних задачах. Для этого мы предлагаем интеллектуальную систему управления и мониторинга, поддерживающую популярные языки разработки Python/C++ и фреймворки ROS/RoboDK. За счёт того, что система управления и мониторинга уже готова, в значительной степени снижается порог вхождения для начала работы с роботом, адаптация под выполнения первых задач вашего проекта проходит быстрее — вы можете настраивать и отлаживать движения робота и взаимодействие с датчиками непосредственно через неё.
     </div>
   </div>
 
@@ -259,10 +267,10 @@ opacity: 0.9;
     </div>
 
     <div class="d-flex  align-center item  px-2" style="position: relative; ">
-      
+
            <div class="stickL" ></div>
              <div class="stickR" ></div>
-    
+
       <div class="d-flex" style="height: 50px; width: 50px; position: relative; flex: 0 0 50px;">
         <div style="
               font-family: 'IBM Plex Mono';
@@ -415,8 +423,7 @@ opacity: 0.9;
             color: #a1aeb7;
           "
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna.
+          Легкий пятизвенный манипулятор для быстрого автоматизированного производства.
         </div>
       </div>
     </div>
@@ -432,17 +439,17 @@ opacity: 0.9;
           padding-top: 288px;
 
           color: #a1aeb7;
-       
-         
+
+
         "
       >
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna.
+          Грузоподьемность: 2 кг
+          Достижимость: 650 мм
         </div>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna.
+          Повторяемость: 2 мм
+          Потребляемая мощность: 1 кВт
         </div>
       </div>
 
@@ -455,7 +462,7 @@ opacity: 0.9;
           src="img/Ellipse.png"
           style="position: absolute; top: 0; right: 0"
         />
-       
+
       </div>
     </div>
   </div>
@@ -540,12 +547,15 @@ style="margin: 0 auto;background-color: #fff; max-width: 830px; width: 100%; mar
           color: #a1aeb7;
         "
       >
-      Сборка манипулятора. Реализация системы управления роботом. Сбор и анализ данных с WEB сайта
+      Разработка Web-сайта визитки проекта.
+      Подбор и закупка комплектующих для робота-манипулятора.
+      Разработка CAD-модели робота.
+      Разработка и тестирование низкоуровневой системы управления приводами
       </div>
     </div>
 
 
-    
+
   </div>
 
 <!-- 2 -->
@@ -606,11 +616,16 @@ style="margin: 0 auto;background-color: #fff; max-width: 830px; width: 100%; mar
           color: #a1aeb7;
         "
       >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.      </div>
+      Разработка и тестирование низкоуровневой системы управления приводами.
+      Сборка и тестирование манипулятора.
+      Разработка и тестирование системы управления движением манипулятора
+      Первичный сбор и анализ данных с датчиков для робота.
+      Сбор и анализ данных с web-сайта.
+     </div>
     </div>
 
 
-    
+
   </div>
 
 
@@ -675,7 +690,9 @@ style="margin: 0 auto;background-color: #fff; max-width: 830px; width: 100%; mar
           color: #a1aeb7;
         "
       >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.      </div>
+      Интеграция внешних датчиков в систему управления роботом
+      Разработка системы человеко-машинного взаимодействия
+      </div>
     </div>
 
 
@@ -740,7 +757,14 @@ style="margin: 0 auto;background-color: #fff; max-width: 830px; width: 100%; mar
           color: #a1aeb7;
         "
       >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.      </div>
+      Разработка документации на ПО и манипулятор.
+      Проведение интеграционных тестов манипулятора как продукта и MVP.
+      Внесение правок в ПО и механику манипулятора по результатам тестов.
+      Подготовка документации для патента.
+      Подготовка бизнес-плана.
+      Мероприятия по поиску софинансирования.
+      Подготовка документов и информации для успешного завершения проекта.
+      </div>
     </div>
 </div>
 </div>
@@ -767,7 +791,7 @@ style="
         border-top: 1px solid rgba(0, 0, 0, 0.3);
         border-right: 1px solid rgba(0, 0, 0, 0.3);
         position: relative;
-    
+
       "
     >
       <div
@@ -782,16 +806,13 @@ style="
         "
       ></div>
       <div style="margin-bottom: 18px">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna.
+        Применение нейроинтерфейса сегодня раскрывается как новая практика коммуникации с внешним миром. Развитие и адаптация данной технологии под потребителя сделает ее в перспективе повсеместным инструментом как в бытовом/техническом плане, так и в художественном.
       </div>
       <div style="margin-bottom: 18px">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna.
+        Мы реализуем коммуникационный процесс между человеком и роботом, переводя биологический сигнал в программный код. Для нас актуальны кинематика, выражение роботической пластики, формируемой био активностью человеческого агента. Используя именно коллаборативный манипулятор, а не иную роботическую систему, в исследовании передачи примитивных команд, с помощью нейроинтерфейса, мы опираемся на аналогию машины с пятью степенями свободы и человеческой руки.
       </div>
       <div style="margin-bottom: 18px">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna.
+        Технологическое искусство развивалось с началом появления робо тических систем. Так, в работе 1968 года  «The Senster» (SAM) Эдварда Игнатовича прослеживается идея мимикрии роботической установки, аналогичной системе манипулятора, под поведение зрителя, а в 2016 году (спустя 48 лет)  эта же концепция полноценно реализуется в проекте Mimus (Mimus — ATONATON) компанией Autodesk.
       </div>
     </div>
 
@@ -799,7 +820,7 @@ style="
       class="d-flex align-end justify-end titleBlock"
       style="
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-   
+
         position: relative;
         flex: 1;
       "
@@ -810,10 +831,10 @@ style="
           font-family: 'IBM Plex Mono';
           font-style: normal;
           font-weight: 700;
-        
+
           color: #505d68;
           position: relative;
-        
+
         "
       >
         <div
@@ -824,7 +845,7 @@ style="
             top: 0;
 
             width: 1px;
-         
+
             background-color: rgba(0, 0, 0, 0.3);
           "
         ></div>
@@ -857,20 +878,15 @@ style="
 
   <div
     class="d-flex d-flex flex-column textBottom">
-  
-  
+
+
     <div style="margin-bottom: 18px">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna.
+      Инвариантное управление роботом-манипулятором отвечает на актуальные вопросы
+    </div>
+    <!-- <div style="margin-bottom: 18px">
     </div>
     <div style="margin-bottom: 18px">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna.
-    </div>
-    <div style="margin-bottom: 18px">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna.
-    </div>
+    </div> -->
   </div>
 </div>
 </div>
@@ -890,8 +906,9 @@ style="
         color: #505d68;
         margin-bottom: 45px;
       "
+      id="anchor-refs"
     >
-      >>О роботах
+      >>References
     </div>
 
     <div
@@ -1565,7 +1582,7 @@ Neri Oxman
   </div>
 		<div class="d-flex flex-column align-center container DataDriving" style="margin-bottom: 150px; position: relative">
     <div id="data_driving" style="position:relative; z-index: -1; top: -50px"></div>
-    <div class="d-flex" style="
+    <div class="d-flex" id="anchor-interview" style="
         font-family: 'IBM Plex Mono';
         font-style: normal;
         font-weight: 700;
@@ -1599,7 +1616,7 @@ Neri Oxman
       background-color: #FAFAFA;
       max-width: 830px;
       width: 100%;
-      
+
       ">
 
         <!-- 1 -->
@@ -1698,7 +1715,7 @@ Neri Oxman
     </div>
 
     <div class="d-flex" style="margin: 0 auto; padding: 30px 40px 30px 40px;
-      
+
       background-color: #FFFFFF;
       max-width: 830px;
       width: 100%;
@@ -1725,9 +1742,9 @@ color: #505D68;">
         </div>
     </div>
 </div>
-		
-		
-		
+
+
+
 	</main>
 	<footer class="d-flex flex-column align-center footer"
     style="position: relative; width: 100vw;background-color: #fff; padding-top: 110px;">
@@ -1735,7 +1752,7 @@ color: #505D68;">
     <div class="d-flex flex-column align-center" style=" padding: 0 20px;">
   <div id="contacts" style="position: relative; z-index: -1; top: -50px">
     </div>
-    <div class="d-flex" style="
+    <div class="d-flex" id="anchor-contacts" style="
     font-family: 'IBM Plex Mono';
     font-style: normal;
     font-weight: 700;
@@ -1825,7 +1842,7 @@ color: #505D68;">
     </div>
     </div>
 
-  
+
     <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed91b5346974c46dab08e7bbba7ad58c77d3777ff3ce4207c761715028d0c9b3&amp;source=constructor"
         width="100%" height="400" max-height="80vh" frameborder="0"></iframe>
