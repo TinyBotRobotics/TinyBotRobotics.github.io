@@ -1,1665 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-				content="width=device-width, initial-scale=1.0">
-	<meta name="description"
-				content="TinyBot">
-	<meta name="keywords"
-				content="">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.svg"
-				type="image/svg+xml">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.webp"
-				type="image/webp">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.png"
-				type="image/x-icon">
-	<link rel="stylesheet"
-				href="css/libs.min.css">
-	<link rel="stylesheet"
-				href="css/style.min.css">
-	<title>Tiny Bot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title of the document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-
 <body>
-	<header class="header" style="
-width: 100vw;
-position: fixed;
-z-index: 100;
-top: 0;
-opacity: 0.9;
-">
-  <div id="navbar" class="d-flex">
-    <div class="pt-0 container d-flex flex-1">
-      <div class="nav d-flex ">
-        <div class="nav_item">
-          EN
-        </div>
-        <div class="nav_item">
-          <a href="#anchor-project">
-            О проекте
-          </a>
-        </div>
-        <div class="nav_item">
-          <a href="#anchor-refs">
-            References
-          </a>
-        </div>
-        <div class="nav_item">
-          <a href="#anchor-interview">
-            DataDriving
-          </a>
-        </div>
-        <div class="nav_item">
-          <a href="#anchor-contacts">
-            Контакты
-          </a>
-        </div>
-      </div>
 
-    </div>
-  </div>
-</header>
-	<main class="main">
-		<div class="d-flex flex-column container initial" style="margin-top:100px; margin-bottom: 150px;">
-  <div class=" initial_content">
-    <div class="initial_title" style="
-          font-family: 'IBM Plex Mono';
-          font-style: normal;
-          font-weight: 300;
 
 
-
-          color: #505d68;
-          text-align: right;
-          padding-right: 8px;
-        ">
-      <div>Tiny</div>
-      <span>Bot</span>
-    </div>
-    <div class="d-flex">
-      <div class="d-flex flex-column initial_cards" style=" margin-top: 32px;">
-        <!-- 1  -->
-        <div class="d-flex flex-grow-1 card"
-           >
-          <div class="d-flex card_number" style="
-
-                        text-align: right;
-
-
-
-
-                      ">1</div>
-          <div class="d-flex flex-column">
-            <div class="card_title" >
-              Коллаборативный
-            </div>
-            <div class="card_text" >
-              Промышленные манипуляторы работают в специально отведенной зоне. Коллаборивный режим снимает эти ограничения. Наш робот может работать рядом с человеком и податливо выполнять с ним задачи.
-            </div>
-          </div>
-        </div>
-
-        <!-- 2 -->
-
-        <div class="d-flex flex-grow-1 card"
-      >          <div class="d-flex card_number" style="
-
-                        text-align: right;
-
-
-
-
-                      ">2</div>
-          <div class="d-flex flex-column">
-            <div class="card_title" >
-              Интеллектуальный
-            </div>
-            <div class="card_text" >
-              Манипулятор может сам генерировать набор движений для выполнения задачи и обучаться этому в процессе.
-            </div>
-          </div>
-        </div>
-        <!-- 3 -->
-        <div class="d-flex flex-grow-1 card"
-       >          <div class="d-flex card_number" style="
-
-          text-align: right;
-
-
-
-
-        ">3</div>
-          <div class="d-flex flex-column">
-            <div class="card_title" >
-              Цифровой
-            </div>
-            <div class="card_text" >
-              Модель окружения робота позволяет ему оптимизировать траекторию движения и избегать препятствий, а мы сможем быстро протестировать и интегрировать робота на под ваши задачи.
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <div style="position: relative; display: flex; flex-basis: 350px">
-        <img src="img/TinyBot.png" class="img"  />
-      </div>
-    </div>
-
-  </div>
-		<div class="d-flex flex-column container align-center ProjectIdea"
-  style="position:relative; margin-bottom: 150px; margin-top: 100px;">
-  <div id="about_project" style="position:relative; z-index: -1; top: -50px"></div>
-  <div class="d-flex flex-column align-center description">
-    <div class="d-flex" id="anchor-project" style="
-          font-family: 'IBM Plex Mono';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 38px;
-          line-height: 48px;
-          /* identical to box height, or 126% */
-          text-align: center;
-
-          color: #505d68;
-          margin-bottom: 15px;
-        ">
-      >>Идея проекта
-    </div>
-    <div class="d-flex" style="
-          font-style: normal;
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 31px;
-          /* or 148% */
-          text-align: center;
-
-          color: #a1aeb7;
-          margin-bottom: 15px;
-
-          text-align: justify!important; -webkit-hyphens: auto; hyphens: auto;
-        ">
-      Обеспечить простоту работы и интеграции, возможность взаимодействовать с человеком, обучаемость и высокую степень интеллектуальности робота.
-    </div>
-    <div class="d-flex" style="
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-          /* or 150% */
-          /* text-align: center; */
-
-          color: #a1aeb7;
-
-          text-align: justify!important; -webkit-hyphens: auto; hyphens: auto;
-        ">
-      Мы разрабатываем робота-манипулятора для безопасной совместной работы с человеком в разносторонних задачах. Для этого мы предлагаем интеллектуальную систему управления и мониторинга, поддерживающую популярные языки разработки Python/C++ и фреймворки ROS/RoboDK. За счёт того, что система управления и мониторинга уже готова, в значительной степени снижается порог вхождения для начала работы с роботом, адаптация под выполнения первых задач вашего проекта проходит быстрее — вы можете настраивать и отлаживать движения робота и взаимодействие с датчиками непосредственно через неё.
-    </div>
-  </div>
-
-  <div class="d-flex justify-center items">
-    <div class="d-flex  align-center item" style="position: relative; ">
-      <div class="stickR" ></div>
-      <div class="d-flex" style="height: 50px; width: 50px; position: relative; flex: 0 0 50px;">
-        <div style="
-              font-family: 'IBM Plex Mono';
-              font-style: normal;
-              font-weight: 500;
-              font-size: 21px;
-              line-height: 31px;
-              /* identical to box height, or 148% */
-              text-align: center;
-
-              color: #a1aeb7;
-              margin-bottom: 15px;
-              width: 50px;
-              height: 50px;
-              border-radius: 50%;
-              border: 1px solid #c2d1d9;
-              background-color: #fff;
-              position: absolute;
-              top: 0;
-              right: 0;
-              z-index: 2;
-            " class="d-flex align-center justify-center">
-          1
-        </div>
-      </div>
-
-      <div class="description">
-        <div style="
-            font-family: 'IBM Plex Mono';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 21px;
-            line-height: 31px;
-            /* identical to box height, or 148% */
-            text-align: center;
-
-            color: #505d68;
-            margin-bottom: 15px;
-          ">
-          Коммуникация
-        </div>
-        <div style="
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            /* or 150% */
-            text-align: center;
-
-            color: #a1aeb7;
-          ">
-          Робот-манипулятор способен выполнять комманды человека с помощью нейроинтерфейса
-        </div>
-      </div>
-
-    </div>
-
-    <div class="d-flex  align-center item  px-2" style="position: relative; ">
-
-           <div class="stickL" ></div>
-             <div class="stickR" ></div>
-
-      <div class="d-flex" style="height: 50px; width: 50px; position: relative; flex: 0 0 50px;">
-        <div style="
-              font-family: 'IBM Plex Mono';
-              font-style: normal;
-              font-weight: 500;
-              font-size: 21px;
-              line-height: 31px;
-              /* identical to box height, or 148% */
-              text-align: center;
-
-              color: #a1aeb7;
-              margin-bottom: 15px;
-              width: 50px;
-              height: 50px;
-              border-radius: 50%;
-              border: 1px solid #c2d1d9;
-              background: white;
-              position: absolute;
-              top: 0;
-              right: 0;
-              z-index: 2;
-            " class="d-flex align-center justify-center">
-          2
-        </div>
-      </div>
-
-      <div class="description">
-        <div style="
-            font-family: 'IBM Plex Mono';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 21px;
-            line-height: 31px;
-            /* identical to box height, or 148% */
-            text-align: center;
-
-            color: #505d68;
-            margin-bottom: 15px;
-          ">
-          Простота
-        </div>
-        <div style="
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            /* or 150% */
-            text-align: center;
-
-            color: #a1aeb7;
-          ">
-          Низкий порог входа для постановки задач для манипулятора
-        </div>
-      </div>
-
-    </div>
-
-    <div class="d-flex align-center item px-2" style="position: relative; ">
-      <div class="stickL" ></div>
-      <div class="d-flex" style="height: 50px; width: 50px; position: relative;flex: 0 0 50px;">
-        <div style="
-              font-family: 'IBM Plex Mono';
-              font-style: normal;
-              font-weight: 500;
-              font-size: 21px;
-              line-height: 31px;
-              /* identical to box height, or 148% */
-              text-align: center;
-
-              color: #a1aeb7;
-              margin-bottom: 15px;
-              width: 50px;
-              height: 50px;
-              border-radius: 50%;
-              border: 1px solid #c2d1d9;
-              background: white;
-              position: absolute;
-              top: 0;
-              right: 0;
-              z-index: 2;
-            " class="d-flex align-center justify-center">
-          3
-        </div>
-      </div>
-
-      <div class="description">
-        <div style="
-            font-family: 'IBM Plex Mono';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 21px;
-            line-height: 31px;
-            /* identical to box height, or 148% */
-            text-align: center;
-
-            color: #505d68;
-            margin-bottom: 15px;
-          ">
-          Поддержка
-        </div>
-        <div style="
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            /* or 150% */
-            text-align: center;
-
-            color: #a1aeb7;
-          ">
-          TinyBot поддерживает: ROS RoboDK C++ Python
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-		<div class="d-flex RobotView" style="margin-bottom:350px">
-    <div class="d-flex partLeft" style=" ">
-      <div class="d-flex imgBlockLeft" style="position: relative;">
-        <img
-          src="img/view1.png"
-          style="position: absolute; top: 0; left: 0; z-index: -1;"
-        />
-      </div>
-      <div class="d-flex flex-column flex-grow-1 text">
-        <div
-          style="
-            font-family: 'IBM Plex Mono';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 38px;
-            line-height: 48px;
-
-            color: #505d68;
-          "
-        >
-          TinyBot
-        </div>
-        <div
-          style="
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 21px;
-            color: #a1aeb7;
-          "
-        >
-          Легкий пятизвенный манипулятор для быстрого автоматизированного производства.
-        </div>
-      </div>
-    </div>
-
-    <div class="d-flex partRight" >
-      <div
-        class="d-flex flex-column flex-grow-1 "
-        style="
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 21px;
-          padding-top: 288px;
-
-          color: #a1aeb7;
-
-
-        "
-      >
-        <div>
-          Грузоподьемность: 2 кг
-          Достижимость: 650 мм
-        </div>
-        <div>
-          Повторяемость: 2 мм
-          Потребляемая мощность: 1 кВт
-        </div>
-      </div>
-
-      <div class="d-flex imgBlockRight" style="position: relative; ">
-        <img
-          src="img/view2.png"
-          style="position: absolute; top: 100px; right: 0"
-        />
-        <img
-          src="img/Ellipse.png"
-          style="position: absolute; top: 0; right: 0"
-        />
-
-      </div>
-    </div>
-  </div>
-		<div
-
-class="d-flex flex-column align-center ProjectDevelopment"
-
-style="margin: 0 auto;background-color: #fff; max-width: 830px; width: 100%; margin-top: 50px; margin-bottom: 200px;"
->
-<div
-  style="
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 48px;
-
-    text-align: center;
-    padding-top: 20px;
-    color: #505d68;
-  "
->
-  Развитие проекта
-</div>
-
-
-<!-- 1 -->
-<div class="d-flex align-center card" >
-    <div
-      class="d-flex align-center"
-      style="flex: 0 0 25px; position: relative; height: 34px"
-    >
-      <div
-        class="d-flex align-center justify-center"
-        style="
-          width: 34px;
-          height: 34px;
-          border-radius: 50%;
-          position: absolute;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background: #424b5a;
-          color: #fff;
-        "
-      >
-     1
-      </div>
-    </div>
-
-    <div
-      class="d-flex align-center"
-      style="flex: 0 0 105px; position: relative"
-    >
-      <img src="img/icon.png" style="width: 105px; height: 105px; border-radius: 50%" />
-
-      <img  src="img/arrow.svg" style="position:absolute; bottom: -40px ; left:50% ; transform: translateX(-50%) rotate(90deg); opacity: 0.4;" />
-    </div>
-
-    <div class="d-flex flex-grow-1 flex-column " style="margin-left: 40px;">
-      <div
-        style="
-          font-family: 'IBM Plex Mono';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 21px;
-          line-height: 31px;
-
-          color: #505d68;
-        "
-      >
-      STAGE 1
-      </div>
-      <div
-        style="
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 21px;
-
-
-          color: #a1aeb7;
-        "
-      >
-      Разработка Web-сайта визитки проекта.
-      Подбор и закупка комплектующих для робота-манипулятора.
-      Разработка CAD-модели робота.
-      Разработка и тестирование низкоуровневой системы управления приводами
-      </div>
-    </div>
-
-
-
-  </div>
-
-<!-- 2 -->
-<div class="d-flex align-center card">
-    <div
-      class="d-flex align-center"
-      style="flex: 0 0 25px; position: relative; height: 34px"
-    >
-      <div
-        class="d-flex align-center justify-center"
-        style="
-          width: 34px;
-          height: 34px;
-          border-radius: 50%;
-          position: absolute;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background: #424b5a;
-          color: #fff;
-        "
-      >
-     2
-      </div>
-    </div>
-
-    <div
-      class="d-flex align-center"
-      style="flex: 0 0 105px; position: relative"
-    >
-      <img src="img/icon.png" style="width: 105px; height: 105px; border-radius: 50%" />
-
-      <img  src="img/arrow.svg" style="position:absolute; bottom: -40px ; left:50% ; transform: translateX(-50%) rotate(90deg); opacity: 0.4;" />
-    </div>
-
-    <div class="d-flex flex-grow-1 flex-column " style="margin-left: 40px;">
-      <div
-        style="
-          font-family: 'IBM Plex Mono';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 21px;
-          line-height: 31px;
-
-          color: #505d68;
-        "
-      >
-      STAGE 2
-      </div>
-      <div
-        style="
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 21px;
-
-
-          color: #a1aeb7;
-        "
-      >
-      Разработка и тестирование низкоуровневой системы управления приводами.
-      Сборка и тестирование манипулятора.
-      Разработка и тестирование системы управления движением манипулятора
-      Первичный сбор и анализ данных с датчиков для робота.
-      Сбор и анализ данных с web-сайта.
-     </div>
-    </div>
-
-
-
-  </div>
-
-
-<!-- 3 -->
-
-<div class="d-flex align-center card" >
-
-
-    <div
-      class="d-flex align-center"
-      style="flex: 0 0 25px; position: relative; height: 34px"
-    >
-      <div
-        class="d-flex align-center justify-center"
-        style="
-          width: 34px;
-          height: 34px;
-          border-radius: 50%;
-          position: absolute;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background: #424b5a;
-          color: #fff;
-        "
-      >
-     3
-      </div>
-    </div>
-
-    <div
-      class="d-flex align-center"
-      style="flex: 0 0 105px; position: relative"
-    >
-      <img src="img/icon.png" style="width: 105px; height: 105px; border-radius: 50%" />
-
-      <img  src="img/arrow.svg" style="position:absolute; bottom: -40px ; left:50% ; transform: translateX(-50%) rotate(90deg); opacity: 0.4;" />
-    </div>
-
-    <div class="d-flex flex-grow-1 flex-column " style="margin-left: 40px;">
-      <div
-        style="
-          font-family: 'IBM Plex Mono';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 21px;
-          line-height: 31px;
-
-          color: #505d68;
-        "
-      >
-      STAGE 3
-      </div>
-      <div
-        style="
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 21px;
-
-
-          color: #a1aeb7;
-        "
-      >
-      Интеграция внешних датчиков в систему управления роботом
-      Разработка системы человеко-машинного взаимодействия
-      </div>
-    </div>
-
-
-
-
-</div>
-
-<!-- 4 -->
-<div class="d-flex align-center card" >
-    <div
-      class="d-flex align-center"
-      style="flex: 0 0 25px; position: relative; height: 34px"
-    >
-      <div
-        class="d-flex align-center justify-center"
-        style="
-          width: 34px;
-          height: 34px;
-          border-radius: 50%;
-          position: absolute;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background: #424b5a;
-          color: #fff;
-        "
-      >
-     4
-      </div>
-    </div>
-
-    <div
-      class="d-flex align-center"
-      style="flex: 0 0 105px; position: relative"
-    >
-      <img src="img/icon.png" style="width: 105px; height: 105px; border-radius: 50%" />
-
-    </div>
-
-    <div class="d-flex flex-grow-1 flex-column " style="margin-left: 40px;">
-      <div
-        style="
-          font-family: 'IBM Plex Mono';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 21px;
-          line-height: 31px;
-
-          color: #505d68;
-        "
-      >
-      STAGE 4
-      </div>
-      <div
-        style="
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 21px;
-
-
-          color: #a1aeb7;
-        "
-      >
-      Разработка документации на ПО и манипулятор.
-      Проведение интеграционных тестов манипулятора как продукта и MVP.
-      Внесение правок в ПО и механику манипулятора по результатам тестов.
-      Подготовка документации для патента.
-      Подготовка бизнес-плана.
-      Мероприятия по поиску софинансирования.
-      Подготовка документов и информации для успешного завершения проекта.
-      </div>
-    </div>
-</div>
-</div>
-
-		<div
-class="d-flex container ScienceArt"
-style="
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-
-  text-align: right;
-
-  color: #a1aeb7;
-  margin-bottom: 150px;
-"
->
-<div class="d-flex" style="flex-wrap: wrap">
-  <div class="d-flex " style="width: 100%">
-    <div
-      class="d-flex  flex-column textTop"
-      style="
-        border-top: 1px solid rgba(0, 0, 0, 0.3);
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
-        position: relative;
-
-      "
-    >
-      <div
-        style="
-          position: absolute;
-          left: 0;
-          top: 0;
-          transform: translateY(-100%);
-          width: 1px;
-          height: 80px;
-          background-color: rgba(0, 0, 0, 0.3);
-        "
-      ></div>
-      <div style="margin-bottom: 18px">
-        Применение нейроинтерфейса сегодня раскрывается как новая практика коммуникации с внешним миром. Развитие и адаптация данной технологии под потребителя сделает ее в перспективе повсеместным инструментом как в бытовом/техническом плане, так и в художественном.
-      </div>
-      <div style="margin-bottom: 18px">
-        Мы реализуем коммуникационный процесс между человеком и роботом, переводя биологический сигнал в программный код. Для нас актуальны кинематика, выражение роботической пластики, формируемой био активностью человеческого агента. Используя именно коллаборативный манипулятор, а не иную роботическую систему, в исследовании передачи примитивных команд, с помощью нейроинтерфейса, мы опираемся на аналогию машины с пятью степенями свободы и человеческой руки.
-      </div>
-      <div style="margin-bottom: 18px">
-        Технологическое искусство развивалось с началом появления робо тических систем. Так, в работе 1968 года  «The Senster» (SAM) Эдварда Игнатовича прослеживается идея мимикрии роботической установки, аналогичной системе манипулятора, под поведение зрителя, а в 2016 году (спустя 48 лет)  эта же концепция полноценно реализуется в проекте Mimus (Mimus — ATONATON) компанией Autodesk.
-      </div>
-    </div>
-
-    <div
-      class="d-flex align-end justify-end titleBlock"
-      style="
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-
-        position: relative;
-        flex: 1;
-      "
-    >
-      <div
-      class="titleInnerBlock"
-        style="
-          font-family: 'IBM Plex Mono';
-          font-style: normal;
-          font-weight: 700;
-
-          color: #505d68;
-          position: relative;
-
-        "
-      >
-        <div
-        class="verticalLine"
-          style="
-            position: absolute;
-            right: 0;
-            top: 0;
-
-            width: 1px;
-
-            background-color: rgba(0, 0, 0, 0.3);
-          "
-        ></div>
-        <div
-          style="
-            position: absolute;
-            right: 0;
-            top: 0;
-
-            width: 50%;
-            height: 1px;
-            background-color: rgba(0, 0, 0, 0.3);
-          "
-        ></div>
-        <div
-          style="
-            position: absolute;
-            right: 50%;
-            top: 1px;
-            transform: translateY(-100%);
-            width: 1px;
-            height: 50px;
-            background-color: rgba(0, 0, 0, 0.3);
-          "
-        ></div>
-        Science Art
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="d-flex d-flex flex-column textBottom">
-
-
-    <div style="margin-bottom: 18px">
-      Инвариантное управление роботом-манипулятором отвечает на актуальные вопросы
-    </div>
-    <!-- <div style="margin-bottom: 18px">
-    </div>
-    <div style="margin-bottom: 18px">
-    </div> -->
-  </div>
-</div>
-</div>
-		<div class="d-flex flex-column align-center conainer AboutRobots" style="margin-bottom: 150px; position: relative;">
-    <div  id="about_robots" style="position:relative; z-index: -1; top: -50px"></div>
-    <div
-      class="d-flex"
-      style="
-        font-family: 'IBM Plex Mono';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 38px;
-        line-height: 48px;
-
-        text-align: center;
-
-        color: #505d68;
-        margin-bottom: 45px;
-      "
-      id="anchor-refs"
-    >
-      >>References
-    </div>
-
-    <div
-      class="d-flex"
-      style="
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-
-        text-align: center;
-
-        color: #a1aeb7;
-        margin-bottom: 40px;
-      "
-    >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna.
-    </div>
-
-    <div class="d-flex justify-center" style="flex-wrap: wrap">
-        <div
-
-class="d-flex flex-column align-center justify-start RobotCard"
-style=" margin-bottom: 26px;"
->
-<div
-  class="d-flex"
-  style="width: 100%; position: relative; padding-bottom: 100%"
->
-  <img
-    src="img/mimus_gif.gif"
-    style="
-      width: 100%;
-      padding-bottom: 100%;
-      object-fit: cover;
-      position: absolute;
-      z-index: 1;
-    "
-    alt=""
-  />
-</div>
-<div
-  style="
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 31px;
-    text-align: left;
-    width: 100%;
-    color: #505d68;
-    margin-top: 12px;
-    margin-bottom: 4px;
-  "
->
-Mimus
-</div>
-<div
-  style="
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: left;
-    width: 100%;
-    color: #a1aeb7;
-  "
->
-Мимус — гигантский промышленный робот, который интересуется окружающим миром.
-</div>
-</div>
-        <div
-
-class="d-flex flex-column align-center justify-start RobotCard"
-style=" margin-bottom: 26px;"
->
-<div
-  class="d-flex"
-  style="width: 100%; position: relative; padding-bottom: 100%"
->
-
-  <img
-    src="img/DB_gif.gif"
-    style="
-      width: 100%;
-      padding-bottom: 100%;
-      object-fit: cover;
-      position: absolute;
-      z-index: 1;
-    "
-    alt=""
-  />
-</div>
-<div
-  style="
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 31px;
-    text-align: left;
-    width: 100%;
-    color: #505d68;
-    margin-top: 12px;
-    margin-bottom: 4px;
-  "
->
-David Bowen
-</div>
-<div
-  style="
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: left;
-    width: 100%;
-    color: #a1aeb7;
-  "
->
-Эта инсталляция позволяет живому растению управлять мачете с помощью промышленного робота.
-</div>
-</div>
-        <div
-
-class="d-flex flex-column align-center justify-start RobotCard"
-style=" margin-bottom: 26px;"
->
-<div
-  class="d-flex"
-  style="width: 100%; position: relative; padding-bottom: 100%"
->
-  <img
-    src="img/NOx_gif.gif"
-    style="
-      width: 100%;
-      padding-bottom: 100%;
-      object-fit: cover;
-      position: absolute;
-      z-index: 1;
-    "
-    alt=""
-  />
-</div>
-<div
-  style="
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 31px;
-    text-align: left;
-    width: 100%;
-    color: #505d68;
-    margin-top: 12px;
-    margin-bottom: 4px;
-  "
->
-Neri Oxman
-</div>
-<div
-  style="
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: left;
-    width: 100%;
-    color: #a1aeb7;
-  "
->
-Роботизированная система, которая может напечатать базовую структуру всего здания.
-</div>
-</div>
-        <div
-
-class="d-flex flex-column align-center justify-start RobotCard"
-style=" margin-bottom: 26px;"
->
-<div
-  class="d-flex"
-  style="width: 100%; position: relative; padding-bottom: 100%"
->
-  <img
-    src="img/hello_robot_gif.gif"
-    style="
-      width: 100%;
-      padding-bottom: 100%;
-      object-fit: cover;
-      position: absolute;
-      z-index: 1;
-    "
-    alt=""
-  />
-</div>
-<div
-  style="
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 31px;
-    text-align: left;
-    width: 100%;
-    color: #505d68;
-    margin-top: 12px;
-    margin-bottom: 4px;
-  "
->
-Hello Robot
-</div>
-<div
-  style="
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: left;
-    width: 100%;
-    color: #a1aeb7;
-  "
->
-Переосмысленный мобильный манипулятор для использования в быту
-</div>
-</div>
-        <div
-
-class="d-flex flex-column align-center justify-start RobotCard"
-style=" margin-bottom: 26px;"
->
-<div
-  class="d-flex"
-  style="width: 100%; position: relative; padding-bottom: 100%"
->
-  <img
-    src="img/N1_gif.gif"
-    style="
-      width: 100%;
-      padding-bottom: 100%;
-      object-fit: cover;
-      position: absolute;
-      z-index: 1;
-    "
-    alt=""
-  />
-</div>
-<div
-  style="
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 31px;
-    text-align: left;
-    width: 100%;
-    color: #505d68;
-    margin-top: 12px;
-    margin-bottom: 4px;
-  "
->
-Neiro pie
-</div>
-<div
-  style="
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: left;
-    width: 100%;
-    color: #a1aeb7;
-  "
->
-Инвазивный нейроинтерфейс, который позволяет парализованным людям пользоваться планшетом.
-</div>
-</div>
-        <div
-
-class="d-flex flex-column align-center justify-start RobotCard"
-style=" margin-bottom: 26px;"
->
-<div
-  class="d-flex"
-  style="width: 100%; position: relative; padding-bottom: 100%"
->
-  <img
-    src="img/LV_gif.gif"
-    style="
-      width: 100%;
-      padding-bottom: 100%;
-      object-fit: cover;
-      position: absolute;
-      z-index: 1;
-    "
-    alt=""
-  />
-</div>
-<div
-  style="
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 31px;
-    text-align: left;
-    width: 100%;
-    color: #505d68;
-    margin-top: 12px;
-    margin-bottom: 4px;
-  "
->
-LightVault
-</div>
-<div
-  style="
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: left;
-    width: 100%;
-    color: #a1aeb7;
-  "
->
-Инсталляция, в которой два промышленных робота строят хранилище из прозрачных стеклянных блоков
-</div>
-</div>
-        <div
-
-class="d-flex flex-column align-center justify-start RobotCard"
-style=" margin-bottom: 26px;"
->
-<div
-  class="d-flex"
-  style="width: 100%; position: relative; padding-bottom: 100%"
->
-  <img
-    src="img/N2_gif.gif"
-    style="
-      width: 100%;
-      padding-bottom: 100%;
-      object-fit: cover;
-      position: absolute;
-      z-index: 1;
-    "
-    alt=""
-  />
-</div>
-<div
-  style="
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 31px;
-    text-align: left;
-    width: 100%;
-    color: #505d68;
-    margin-top: 12px;
-    margin-bottom: 4px;
-  "
->
-Управление мозгом
-</div>
-<div
-  style="
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: left;
-    width: 100%;
-    color: #a1aeb7;
-  "
->
-Нейроинтерфейс, позволяющий парализованным людям управлять роботами-манипуляторами
-</div>
-</div>
-        <div
-
-class="d-flex flex-column align-center justify-start RobotCard"
-style=" margin-bottom: 26px;"
->
-<div
-  class="d-flex"
-  style="width: 100%; position: relative; padding-bottom: 100%"
->
-  <img
-    src="img/PinPong_gif.gif"
-    style="
-      width: 100%;
-      padding-bottom: 100%;
-      object-fit: cover;
-      position: absolute;
-      z-index: 1;
-    "
-    alt=""
-  />
-</div>
-<div
-  style="
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 31px;
-    text-align: left;
-    width: 100%;
-    color: #505d68;
-    margin-top: 12px;
-    margin-bottom: 4px;
-  "
->
-Pin Pong
-</div>
-<div
-  style="
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: left;
-    width: 100%;
-    color: #a1aeb7;
-  "
->
-Робот Kuka играет с Тимом Боулом в настольный теннис
-</div>
-</div>
-        <div
-
-class="d-flex flex-column align-center justify-start RobotCard"
-style=" margin-bottom: 26px;"
->
-<div
-  class="d-flex"
-  style="width: 100%; position: relative; padding-bottom: 100%"
->
-  <img
-    src="img/EO_gif.gif"
-    style="
-      width: 100%;
-      padding-bottom: 100%;
-      object-fit: cover;
-      position: absolute;
-      z-index: 1;
-    "
-    alt=""
-  />
-</div>
-<div
-  style="
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 31px;
-    text-align: left;
-    width: 100%;
-    color: #505d68;
-    margin-top: 12px;
-    margin-bottom: 4px;
-  "
->
-Art of Spectacle
-</div>
-<div
-  style="
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: left;
-    width: 100%;
-    color: #a1aeb7;
-  "
->
-Арт выставка Эдди Опара - Art of Spectacle
-</div>
-</div>
-    </div>
-  </div>
-		<div class="d-flex flex-column align-center container DataDriving" style="margin-bottom: 150px; position: relative">
-    <div id="data_driving" style="position:relative; z-index: -1; top: -50px"></div>
-    <div class="d-flex" id="anchor-interview" style="
-        font-family: 'IBM Plex Mono';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 38px;
-        line-height: 48px;
-
-        text-align: center;
-
-        color: #505d68;
-        margin-bottom: 45px;
-      ">
-        >>Data Driving
-    </div>
-
-    <div class="d-flex" style="
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-
-        text-align: center;
-
-        color: #a1aeb7;
-        margin-bottom: 40px;
-      ">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna.
-    </div>
-
-    <div class="d-flex align-center justify-center card" style="margin: 0 auto; ;
-      background-color: #FAFAFA;
-      max-width: 830px;
-      width: 100%;
-
-      ">
-
-        <!-- 1 -->
-        <div class="d-flex flex-grow-1 stage">
-            <div class="d-flex flex-column align-center justify-center">
-
-                <div class="d-flex align-center justify-center imgContainer"
-                    style="background-color: #f2f5f7; margin-bottom: 12px; border-radius:50%; position: relative; ">
-                    <div class="d-flex align-center justify-center badge">
-                        1
+    <div style="background-color: rgba(23, 23, 35); color:#fff" id="header">
+        <div class="container-md">
+
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col-6 text-center">
+                    <img src="img/zyro-image.png" style="width: 120%;">
+                </div>
+                <div class="col-6">
+                    <div class="row justify-content-md-end">
+                        <p class="text-end" style="font-size: 240px; line-height: 1;">
+                            <span>T</span>
+                            <span>I</span>
+                            <span>N</span>
+                            <span>Y</span>
+                        </p>
+                        <p class="text-end" style="font-size: 16px;">
+                            Проект TinyBot призван создать высокофункциональный коллаборативный манипулятор и предоставить комплексное решении задачи интеграции и систему управления роботом.
+                        </p>
+                        <div class="d-md-flex gap-2 justify-content-md-end">
+                            <button type="button" class="btn btn-outline-light">Пройти опрос</button>
+                            <button type="button" class="btn btn-outline-light">Узнать о проекте</button>
+                        </div>
                     </div>
-                    <img src="img/stage1.png" alt="" />
-                </div>
-
-
-                <div class="title">
-                    Старт
                 </div>
             </div>
-            <div class="d-flex flex-grow-1 align-center justify-center">
-                <div style="margin-top: 32px; margin-left: 4px;">
-                    <img src="img/arrow.svg" style="transform: translateX(-50%); opacity: 0.4" />
-                </div>
-            </div>
-        </div>
 
-
-        <!-- 2 -->
-        <div class="d-flex flex-grow-1 stage">
-            <div class="d-flex flex-column align-center justify-center">
-
-                <div class="d-flex align-center justify-center imgContainer"
-                    style="background-color: #f2f5f7;  margin-bottom: 12px; border-radius:50%; position: relative; ">
-                    <div class="d-flex align-center justify-center badge">2
+            <div class="row justify-content-center align-items-center g-2 py-5">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <div class="row mb-5 pb-5">
+                        <p style="font-size: 50px; line-height: 1;"> Разработка <br> человеко-машинного интерфейса </p>
+                        <p style="font-size: 16px;"> TINY BOT - это манипулятор управляемый через коллаборативным алгоритмом на основании информации с датчиков энцефалографа, камеры и силомоментных датчиков. </p>
+                        <p style="font-size: 16px;"> В проекте реализована интеллектуальная система управления и мониторинга, поддерживающую популярные языки разработки Python/C++ и фреймворки ROS/RoboDK </p>
+                        <div class="d-md-flex gap-2 justify-content-md-end">
+                            <button type="button" class="btn btn-outline-light"> Скачать </button>
+                        </div>
                     </div>
-                    <img src="img/stage2.png" alt="" />
-                </div>
-
-
-                <div class="title">
-                    Sign up
-                </div>
-            </div>
-            <div class="d-flex flex-grow-1 align-center justify-center">
-                <div style="margin-top: 32px; margin-left: 4px;">
-                    <img src="img/arrow.svg" style="transform: translateX(-50%); opacity: 0.4" />
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- 3 -->
-
-        <div class="d-flex flex-grow-1 stage">
-            <div class="d-flex flex-column align-center justify-center">
-
-                <div class="d-flex align-center justify-center imgContainer"
-                    style="background-color: #f2f5f7;  margin-bottom: 12px; border-radius:50%; position: relative; ">
-                    <div class="d-flex align-center justify-center badge">3
-                    </div>
-                    <img src="img/stage3.png" alt="" />
-                </div>
-
-
-                <div class="title">
-                    Sign up
-                </div>
-            </div>
-            <div class="d-flex flex-grow-1 align-center justify-center">
-                <div style="margin-top: 32px; margin-left: 4px;">
-                    <img src="img/arrow.svg" style="transform: translateX(-50%); opacity: 0.4" />
-                </div>
-            </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="d-flex stage">
-            <div class="d-flex flex-column align-center justify-center">
-
-                <div class="d-flex align-center justify-center imgContainer"
-                    style="background-color: #f2f5f7; margin-bottom: 12px; border-radius:50%; position: relative; ">
-                    <div class="d-flex align-center justify-center badge">
-                        4
-                    </div>
-                    <img src="img/stage4.png" alt="" />
-                </div>
-
-
-                <div class="title">
-                    Sign up
                 </div>
             </div>
 
         </div>
     </div>
 
-    <div class="d-flex" style="margin: 0 auto; padding: 30px 40px 30px 40px;
 
-      background-color: #FFFFFF;
-      max-width: 830px;
-      width: 100%;
-      height: 90vh;">
-        <div class="d-flex flex-column align-center justify-center flex-grow-1" style="height: 100%;">
-            <div style="font-style: normal;
-                font-weight: 300;
-                margin-bottom: 16px;
-font-size: 16px;
-line-height: 21px;
-display: flex;
-align-items: flex-end;
-text-align: center;
-max-width: 400px;
-color: #505D68;">
-                В свободном порядке переключаясь между сферами и подсферами, выберите
-                от одного до нескольких форматов управления манипулятором для
-                выбранных вариантов.
+
+
+
+    <!-- Scroll one -->
+
+    <div style="background-color: #F0F0F0;">
+
+        <div class="container-md">
+
+            <!-- Slide 1 -->
+            <div class="row justify-content-center align-items-center g-2 py-5 reveal">
+                <div class="col-md-6 col-auto">
+                    <p style="font-size: 50px; color: #060A68;"> Step_1 </p>
+                    <p style="font-size: 50px; line-height: 1;"> Инициализация работы над проектом </p>
+                    <p style="font-size: 16;"> Создание базы для создания манипулятора и продуктового развития проекта. Возможны недочеты и будущие правки. Этап должен запустить для нас входной канал для будущей модификации продукта. </p>
+                </div>
+                <div class="col-md-6 col-auto text-center px-4">
+                    <img src="img/b9ca073b8d30cc6efae14bed7bc27b84.png" style="width: 100%;">
+                </div>
             </div>
 
-            <div class="d-flex justify-center " style="background-color:#505D68; width: 165px; padding: 10px 0;">
-                <span style="text-transform: none; color: white">начать</span>
+            <!-- Slide 2 -->
+            <div class="row justify-content-center align-items-center g-2 py-5 reveal">
+                <div class="col-md-6 col-auto">
+                    <p style="font-size: 50px; color: #060A68;"> Step_2 </p>
+                    <p style="font-size: 50px; line-height: 1;"> Сборка материального продукта </p>
+                    <p style="font-size: 16;"> В данном этапе выполняются тесты комплектующих и материалов манипулятора в номинальном режиме работы. Нам нужно собрать и протестировать всю механику манипулятора. Здесь возможны риски, связанные с низким качеством материалов или двигателей робота. Также нужно собрать данные с энцефалографа и начать работу с камерой для манипулятора. Этап должен обеспечить нас мнением инвесторов и обывателей о продукте. Формируются входные данные для следующего этапа. </p>
+                </div>
+                <div class="col-md-6 col-auto text-center px-4">
+                    <img src="img/ff1f598ce4ab543477ee5d1385328830.png" style="width: 100%;">
+                </div>
             </div>
-        </div>
-    </div>
-</div>
 
+            <!-- Slide 3 -->
+            <div class="row justify-content-center align-items-center g-2 py-5 reveal">
+                <div class="col-md-6 col-auto">
+                    <p style="font-size: 50px; color: #060A68;"> Step_3 </p>
+                    <p style="font-size: 50px; line-height: 1;"> Внедрение системы человеко-машинного взаимодействия </p>
+                    <p style="font-size: 16;"> Для полноценной работы манипулятор должен надежно функционировать. Данный этап реализует основные функции и инновации, которые мы готовы заложить в робота. Современные метод управления должны обеспечить коллаборативные свойства при работе манипулятора при взаимодействии с человеком. На данном этапе мы показываем инвестору возможности нашей системы вживую. </p>
+                </div>
+                <div class="col-md-6 col-auto text-center px-4">
+                    <img src="img/fd9c44e290d79adab92acc5f8d5f0fce.png" style="width: 100%;">
+                </div>
+            </div>
 
+            <!-- Slide 4 -->
+            <div class="row justify-content-center align-items-center g-2 py-5 reveal">
+                <div class="col-md-6 col-auto">
+                    <p style="font-size: 50px; color: #060A68;"> Step_4 </p>
+                    <p style="font-size: 50px; line-height: 1;"> Разработка документации и финализация MVP </p>
+                    <p style="font-size: 16;"> Данный этап является активной фазой проекта по работе с инвестором. В прошлых этапах это фоновая работа 1 - 2 людей. Важно обеспечить все потребности потребителей и инвесторов. </p>
+                </div>
+                <div class="col-md-6 col-auto text-center px-4">
+                    <img src="img/notion-picks-badge.png" style="width: 100%;">
+                </div>
+            </div>
 
-	</main>
-	<footer class="d-flex flex-column align-center footer"
-    style="position: relative; width: 100vw;background-color: #fff; padding-top: 110px;">
-
-    <div class="d-flex flex-column align-center" style=" padding: 0 20px;">
-  <div id="contacts" style="position: relative; z-index: -1; top: -50px">
-    </div>
-    <div class="d-flex" id="anchor-contacts" style="
-    font-family: 'IBM Plex Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 48px;
-
-    text-align: center;
-
-    color: #505d68;
-    margin-bottom: 14px;
-  ">
-        >Контакты
-    </div>
-
-    <div class="d-flex" style="
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-
-    text-align: center;
-
-    color: #a1aeb7;
-    margin-bottom: 14px;
-  ">
-        Мы будем рады вашим идеям и предложениям
-    </div>
-    <div class="d-flex" style="
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    max-width: 600px;
-    color: #a1aeb7;
-    margin-bottom: 40px;
-  ">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam quis.
-    </div>
-    <textarea class="d-flex callbackTextarea " placeholder="Начните вводить текст..." rows="4"></textarea>
-
-    <div class="d-flex justify-center callbackBtn">
-
-        <span style="text-transform: uppercase; color: white; font-size: 12px">Отправить</span>
-    </div>
-    <div class="d-flex align-center justify-space-between contacts"
-       >
-        <div class="d-flex align-center"  >
-            <img src="img/mail.svg" style="margin-right: 12px;" />
-            <a href="mailto:info@form.com " style="
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-
-        color: #a1aeb7;
-      ">info@form.com
-            </a>
         </div>
 
-        <div class="d-flex align-center">
-            <img src="img/phone.svg" style="margin-right: 12px" />
-            <a href="tel:877-255-7945" style="
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-
-        color: #a1aeb7;
-      ">877-255-7945
-            </a>
-        </div>
-
-        <div class="d-flex align-center">
-            <img src="img/path.svg" style="margin-right: 12px;" />
-            <span href="mailto:info@form.com" style="
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-
-        color: #a1aeb7;
-      ">ИТМО</span>
-        </div>
-    </div>
     </div>
 
 
-    <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed91b5346974c46dab08e7bbba7ad58c77d3777ff3ce4207c761715028d0c9b3&amp;source=constructor"
-        width="100%" height="400" max-height="80vh" frameborder="0"></iframe>
 
-</footer>
-	<script src="js/libs.min.js"></script>
-<script src="js/main.min.js"></script>
 
+
+
+
+
+
+
+
+
+    <!-- Scroll two -->
+
+    <div style="background-color: #F0F0F0;">
+    
+        <div class="container-md">
+
+            <!-- Slide one -->
+            <div class="row justify-content-center align-items-center g-2 min-vh-100 roteal">
+                <div class="col-8 py-5 my-5 tiny-block">
+                    <p class="text-center" style="font-size: 260px;">
+                        <span style="color: #000000;">T</span>
+                        <span style="color: #00000066;">I</span>
+                        <span style="color: #00000066;">N</span>
+                        <span style="color: #00000066;">Y</span>
+                    </p>
+                    <p class="text-center" style="font-size: 50px;"> Integrated Fields </p>
+                    <p class="text-start fw-lighter" style="font-size: 16px;"> Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door. </p>
+                </div>
+            </div>
+
+            <!-- Slide two -->
+            <div class="row justify-content-center align-items-center g-2 min-vh-100 roteal">
+                <div class="col-8 py-5 my-5 tiny-block">
+                    <p class="text-center" style="font-size: 260px;">
+                        <span style="color: #000000;">T</span>
+                        <span style="color: #000000;">I</span>
+                        <span style="color: #00000066;">N</span>
+                        <span style="color: #00000066;">Y</span>
+                    </p>
+                    <p class="text-center" style="font-size: 50px;"> Integrated Fields </p>
+                    <p class="text-start fw-lighter" style="font-size: 16px;"> Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door. </p>
+                </div>
+            </div>
+
+            <!-- Slide three -->
+            <div class="row justify-content-center align-items-center g-2 min-vh-100 roteal">
+                <div class="col-8 py-5 my-5 tiny-block">
+                    <p class="text-center" style="font-size: 260px;">
+                        <span style="color: #000000;">T</span>
+                        <span style="color: #000000;">I</span>
+                        <span style="color: #000000;">N</span>
+                        <span style="color: #00000066;">Y</span>
+                    </p>
+                    <p class="text-center" style="font-size: 50px;"> Integrated Fields </p>
+                    <p class="text-start fw-lighter" style="font-size: 16px;"> Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door. </p>
+                </div>
+            </div>
+
+            <!-- Slide four -->
+            <div class="row justify-content-center align-items-center g-2 min-vh-100 roteal">
+                <div class="col-8 py-5 my-5 tiny-block">
+                    <p class="text-center" style="font-size: 260px;">
+                        <span style="color: #000000;">T</span>
+                        <span style="color: #000000;">I</span>
+                        <span style="color: #000000;">N</span>
+                        <span style="color: #000000;">Y</span>
+                    </p>
+                    <p class="text-center" style="font-size: 50px;"> Integrated Fields </p>
+                    <p class="text-start fw-lighter" style="font-size: 16px;"> Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door. </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    <div style="background-color: #FFF;">
+        <div class="row justify-content-center align-items-center g-2 min-vh-100">
+            Some new info
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/velocity.ui.min.js"></script>
+
+    <script src="js/animations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
 </html>

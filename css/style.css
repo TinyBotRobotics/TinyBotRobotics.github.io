@@ -1,0 +1,36 @@
+* {
+    font-family: "Lato", sans-serif;
+}
+
+.tiny-block {
+    background-image: url("../img/cube-image-bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+.reveal {
+    opacity: 0.1;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+/* .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+} */
+
+/* .roteal {
+    -webkit-perspective: 1800px;
+    -moz-perspective: 1800px;
+    perspective: 1800px;
+} */
