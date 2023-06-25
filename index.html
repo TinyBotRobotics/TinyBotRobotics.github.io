@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title of the document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -13,25 +12,22 @@
 
 
 
-    <div style="background-color: rgba(23, 23, 35); color:#fff" id="header">
+    <div style="background-color: rgba(23, 23, 35); color:#fff; position: relative; overflow: hidden;" id="header">
         <div class="container-md">
 
-            <div class="row justify-content-center align-items-center g-2">
-                <div class="col-6 text-center">
-                    <img src="img/zyro-image.png" style="width: 120%;">
+            <div class="row justify-content-center align-items-center g-2" style="min-height: 90vh;">
+                <img src="img/Rectangle 373.png" class="col-md-8 px-5" style="position: absolute; z-index: 3; left: -8%;">
+                <div class="col-lg d-lg-block d-none text-center">
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col" style="z-index: 10;">
                     <div class="row justify-content-md-end">
-                        <p class="text-end" style="font-size: 240px; line-height: 1;">
-                            <span>T</span>
-                            <span>I</span>
-                            <span>N</span>
-                            <span>Y</span>
+                        <p class="text-end" style="font-size: 230px; line-height: 1; font-family: 'Lato-Thin', sans-serif;">
+                            <span style="font-family: 'Lato-Light', sans-serif;">T</span><span style="font-family: 'Lato-Thin', sans-serif;">I</span><span style="font-family: 'Lato-Light', sans-serif;">N</span><span style="font-family: 'Lato-Light', sans-serif;">Y</span>
                         </p>
                         <p class="text-end" style="font-size: 16px;">
                             Проект TinyBot призван создать высокофункциональный коллаборативный манипулятор и предоставить комплексное решении задачи интеграции и систему управления роботом.
                         </p>
-                        <div class="d-md-flex gap-2 justify-content-md-end">
+                        <div class="d-flex gap-2 justify-content-end">
                             <button type="button" class="btn btn-outline-light">Пройти опрос</button>
                             <button type="button" class="btn btn-outline-light">Узнать о проекте</button>
                         </div>
@@ -39,10 +35,12 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center align-items-center g-2 py-5">
-                <div class="col-6"></div>
-                <div class="col-6">
-                    <div class="row mb-5 pb-5">
+            <div class="row justify-content-center align-items-center g-2" style="min-height: 90vh;"> 
+                <img src="img/image 157.png" class="col-md-8 px-5" style="opacity: 5%; position: absolute; z-index: 2; left: -8%;"/>
+                <img src="img/tiny_bot_not_ass_not_full_2d 8.png" class="col-md-7 px-5 img-flip-x " style="position: absolute; z-index: 3; left: 0;"/>
+                <div class="col-lg d-lg-block d-none"></div>
+                <div class="col-lg-6 col">
+                    <div class="row mb-5">
                         <p style="font-size: 50px; line-height: 1;"> Разработка <br> человеко-машинного интерфейса </p>
                         <p style="font-size: 16px;"> TINY BOT - это манипулятор управляемый через коллаборативным алгоритмом на основании информации с датчиков энцефалографа, камеры и силомоментных датчиков. </p>
                         <p style="font-size: 16px;"> В проекте реализована интеллектуальная система управления и мониторинга, поддерживающую популярные языки разработки Python/C++ и фреймворки ROS/RoboDK </p>

@@ -1,3 +1,25 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Lato/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-LightItalic';
+    src: url(../fonts/Lato/Lato-LightItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato-Light';
+    src: url(../fonts/Lato/Lato-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato-Thin';
+    src: url(../fonts/Lato/Lato-Thin.ttf) format('truetype');
+}
+
+
 * {
     font-family: "Lato", sans-serif;
 }
@@ -17,20 +39,10 @@
     opacity: 1;
 }
 
-/* .reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
+
+.img-flip-x {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
-
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
-} */
-
-/* .roteal {
-    -webkit-perspective: 1800px;
-    -moz-perspective: 1800px;
-    perspective: 1800px;
-} */
